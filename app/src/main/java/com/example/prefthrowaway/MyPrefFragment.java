@@ -5,6 +5,7 @@ import android.support.v14.preference.PreferenceFragment;
 import android.support.v14.preference.SwitchPreference;
 import android.support.v7.preference.Preference;
 import android.support.v7.preference.PreferenceGroup;
+import android.support.v7.preference.SwitchPreferenceCompat;
 import android.widget.Toast;
 
 public class MyPrefFragment extends PreferenceFragment {
@@ -15,7 +16,7 @@ public class MyPrefFragment extends PreferenceFragment {
 
         PreferenceGroup preferenceGroup = (PreferenceGroup) findPreference("pref_cat_1");
 
-        SwitchPreference switchPreference = new SwitchPreference(getActivity());
+        SwitchPreferenceCompat switchPreference = new SwitchPreferenceCompat(getActivity());
         switchPreference.setTitle("new");
         switchPreference.setChecked(true);
         switchPreference.setDefaultValue(true);
