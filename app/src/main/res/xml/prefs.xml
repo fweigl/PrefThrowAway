@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory android:title="cat_one">
+
+        <SwitchPreference
+            android:key="pref_1"
+            android:defaultValue="false"
+            android:title="fest"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory
+        android:key="pref_cat_1"
+        android:title="category"/>
+
+</PreferenceScreen>
